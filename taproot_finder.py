@@ -5,6 +5,8 @@ from addressFunctions import hasTaprootAddress
 from_block = int(input("From block number: "))
 to_block = int(input("To block number: "))
 
+print()
+
 block_hashes = getBlockRange(from_block, to_block)
 
 taproot = []
@@ -18,5 +20,7 @@ for block_num in block_hashes:
 		if( hasTaprootAddress(tx) ):
 			taproot.append(tx)
 
+print()
+print("Transactions found:")
 for tap in taproot:
 	print(tap["txid"])
