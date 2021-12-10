@@ -5,6 +5,7 @@ A simple script to get all transactions with any taproot input/output in a range
 ## Installation
 ```bash
  git clone https://github.com/ArTombado/taproot_tx_finder
+ cd taproot_tx_finder
  pip3 install -r requirements.txt
 ```
 
